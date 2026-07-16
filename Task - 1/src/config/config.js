@@ -13,8 +13,6 @@ if(!(process.env.GOOGLE_CLIENT_ID || process.env.GOOGLE_CLIENT_SECRET || process
     throw new ApiError(301,"Somthing Googles .env is not present in .env")
 }
 
-
-
 const config = {
     MONGO_URI: process.env.MONGO_URI,
     JWT_SECRET: process.env.JWT_SECRET,
