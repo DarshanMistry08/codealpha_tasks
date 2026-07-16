@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #0f172a; 
+    color: #f8fafc; 
+    line-height: 1.5;
+}
+
+/* For Navbar */
+nav {
+    background-color: #1e293b; 
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #334155; 
+}
+
+nav h2 {
+    color: #3b82f6; 
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #94a3b8; 
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff; 
+}
+
+main {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+.empty-registration {
+    background-color: #1e293b;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #334155;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+.empty-registration h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.empty-registration p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px -1px rgba(37, 99, 235, 0.3);
+}
+button a {
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+label {
+    font-size: 1.295rem;
+    font-weight: 500;
+    color: #94a3b8;
+    margin-top: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+input[type="text"],input[type="number"],input[type="date"],select
+ {
+    width: 50%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background-color: #0f172a; 
+    color: #f8fafc;
+    transition: all 0.2s ease-in-out;
+}
+.registration-card {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.registration-card:hover {
+    border-color: #3b82f6;
+    transform: translateY(-2px);
+}
+
+.registration-card h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.registration-card p {
+    margin-bottom: 6px;
+    color: #cbd5e1; 
+}
+
+/* for Responsive  */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main {
+        margin: 40px auto;
+    }
+
+    .empty-registration {
+        padding: 25px;
+    }
+}

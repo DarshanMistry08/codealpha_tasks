@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Events</title>
+    <link rel="stylesheet" href="/stylesheets/events.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="h">
+            <h1>Upcoming Events</h1>
+            <div class="btn">
+                <a href="http://localhost:3000/home">home</a>
+                <a href="http://localhost:3000/Registration/event">Registration</a>
+            </div>
+        </div>
+
+        <p>Browse all available events and register now.</p>
+    </header>
+
+    <h1>List Of All Events</h1>
+    
+    <div class="events-grid">
+        <% events.forEach(events=> { %>
+            <div class="event-class">
+                <%= events._id %>
+                <h2>
+                    <%= events.eventName %>
+                </h2>
+
+                <p>
+                    <%= events.description %>
+                </p>
+
+                <div class="info">
+                    <p>
+                        <%= events.date %>
+                    </p>
+                    <p>
+                        <%= events.location %>
+                    </p>
+                    <p>
+                        <%= events.organizer %>
+                    </p>
+                </div>
+                
+                <a href="http://localhost:3000/Registration/event/<%= events._id %>">
+                    Register
+                </a>
+            </div>
+        <% }) %>
+    </div>
+
+</body>
+
+</html>
